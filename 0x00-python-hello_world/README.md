@@ -44,5 +44,20 @@ Here are general requirements
 |-----------------------|-------------------------------------------------------|
 |**0-run**		|Shell script that runs a Python script			|
 |**1-run_inline**	|Shell script that runs Python code			||**2-print.py**	 |Python script that prints a particular string		 |
+|**3-print_number.py**	|Print a string using _f-string_			|
+|**4-print_float.py**	|Prints a float						|
+|**5-print_string.py**	|Prints a string 3 times				|
+|**6-concat.py**	|Prints the string ```Welcome to Holberton School!```	|
+|**7-edges.py**		|Slices and prints strings				|
+|**8-concat_edges.py**	|Slices and prints ```object-oriented programming with Python```|
+|**9-easter_egg.py**	|Prints “The Zen of Python”, by TimPeters		|
+|**100-write.py**	|Prints exactly ```and that piece of art is useful - Dora Korpar, 2015-10-19```|
+|**101-compile**	|Compiles a Python script file				|
+|**102-magic_calculation.py**|Gives the same output as this disassembled code ```3           0 LOAD_CONST               1 (98)
+              3 LOAD_FAST                0 (a)
+              6 LOAD_FAST                1 (b)
+              9 BINARY_POWER
+             10 BINARY_ADD
+             11 RETURN_VALUE  ```|
 
 
