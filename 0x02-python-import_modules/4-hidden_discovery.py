@@ -5,4 +5,3 @@ if __name__ == '__main__':
     for name in list_dir:
         if name[:2] != '__':
             print("{}".format(name))
-
