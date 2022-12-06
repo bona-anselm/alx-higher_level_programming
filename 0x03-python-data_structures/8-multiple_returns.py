@@ -7,5 +7,5 @@ def multiple_returns(sentence):
         new_tuple = (len_sentence, None)
     else:
         new_tuple = (len_sentence, first_char)
-    
+
     return new_tuple
