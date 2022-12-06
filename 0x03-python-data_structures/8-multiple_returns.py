@@ -3,6 +3,9 @@ def multiple_returns(sentence):
     len_sentence = len(sentence)
     first_char = sentence[0]
 
+    if not sentence:
+        sentence = None
+
     if len_sentence == 0:
         new_tuple = (len_sentence, None)
     else:
