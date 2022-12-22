@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""There are no imports or modules in this task
+    and so no module documentation
+"""
 
 
 class Square:
