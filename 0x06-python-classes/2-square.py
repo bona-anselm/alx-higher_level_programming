@@ -3,7 +3,8 @@
 
 
 class Square:
-    """Defines a class: Square with a private attribute: size and checks Exceptions
+    """Defines a class: Square with a private
+       attribute: size and checks Exceptions
     """
 
     def __init__(self, size=0):
