@@ -4,7 +4,7 @@
 
 class Square:
     """Defines a class: Square with a private
-       attribute: size and checks Exceptions. It also prints the 
+       attribute: size and checks Exceptions. It also prints the
        square with the the character '#'
     """
     def __init__(self, size=0):
