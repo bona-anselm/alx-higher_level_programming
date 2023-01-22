@@ -1,6 +1,7 @@
 #!/usr/bin/python3
+"""This module creates an empty class"""
 
 
 class Rectangle:
-    """Creates an empty class Recatangle"""
+    """Empty class Recatangle"""
     pass
