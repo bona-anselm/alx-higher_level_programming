@@ -19,4 +19,3 @@ def pascal_triangle(n):
             inner_list.append(res)
         outer_list.append(inner_list)
     return outer_list
-
