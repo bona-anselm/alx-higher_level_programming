@@ -7,5 +7,3 @@ if (argCount[2] === undefined) {
 } else {
   console.log(argCount[2]);
 }
-  
-
