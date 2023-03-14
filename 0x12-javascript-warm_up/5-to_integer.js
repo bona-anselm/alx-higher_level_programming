@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
-const value = Math.floor(Number(process.argv[2]));
+const argPassed = Math.floor(Number(process.argv[2]));
 
-if (isNaN(value)) {
+if (isNaN(argPassed)) {
   console.log('Not a number');
 } else {
-  console.log(`My number: ${value}`);
+  console.log('My number:', argPassed);
 }
