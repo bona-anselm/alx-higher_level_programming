@@ -1,26 +1,26 @@
 #!/usr/bin/node
 
-const args = process.argv.slice(2);
+const args = process.argv.splice(2);
 
 if (args.length === 0 || args.length === 1) {
   console.log(0);
 } else {
-  const numbers = args.map(num => parseInt(num)); // convert all arguments to integers
-  let max = -Infinity;
-  let secondMax = -Infinity;
-
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] > max) {
-      secondMax = max;
-      max = numbers[i];
-    } else if (numbers[i] > secondMax && numbers[i] !== max) {
-      secondMax = numbers[i];
-    }
+  const numArgs = args.map(num => parseInt(num));
+  
+  let maxNumber = -Infinity;
+  let secondMaxNumber = -Infinity;
+   
+  for (let i = 0; i < numArgs.length; i++) {
+    if (numArgs[i] > maxNumber) {
+      secondMaxNumber = maxNumber;
+      maxNumber = numArgs[i];
+  } else if (numArgs[i] > secondMaxNumber && numArgs[i] !== maxNumber) {
+    secondMaxNumber = numArgs[i];
   }
-
-  if (secondMax === -Infinity) {
+}
+  if (secondMaxNumber === -Infinity) {
     console.log(0);
   } else {
-    console.log(secondMax);
+    console.log(secondMaxNumber);
   }
 }
