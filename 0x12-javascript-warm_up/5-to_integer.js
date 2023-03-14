@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const argPassed = Math.floor(Number(parseInt(process.argv[2])));
+const argPassed = Math.floor(Number(process.argv[2]));
 // const argConverted = parseInt(argPassed[2]);
 
 if (isNaN(argPassed)) {
