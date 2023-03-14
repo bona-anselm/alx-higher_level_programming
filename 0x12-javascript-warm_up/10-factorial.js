@@ -2,7 +2,6 @@
 
 const numArg = parseInt(process.argv[2]);
 
-
 function factorial (numArg) {
   if (isNaN(numArg) || numArg === 0) {
     return 1;
@@ -11,4 +10,3 @@ function factorial (numArg) {
   }
 }
 console.log(factorial(numArg));
-
