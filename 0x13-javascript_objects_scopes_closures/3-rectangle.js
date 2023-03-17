@@ -8,8 +8,8 @@ module.exports = class Rectangle {
     }
   }
 
-  print() {
-    for (let i = 0; i < this. height; i++) {
+  print () {
+    for (let i = 0; i < this.height; i++) {
       let squareSymbol = '';
       for (let j = 0; j < this.width; j++) {
         squareSymbol += 'X';
