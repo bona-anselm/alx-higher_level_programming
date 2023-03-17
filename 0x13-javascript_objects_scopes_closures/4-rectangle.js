@@ -18,13 +18,12 @@ module.exports = class Rectangle {
     }
   }
 
-  double() {
+  double () {
     this.height *= 2;
     this.width *= 2;
   }
 
-
-  rotate() {
+  rotate () {
     const brief = this.height;
     this.height = this.width;
     this.width = brief;
