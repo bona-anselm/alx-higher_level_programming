@@ -7,10 +7,9 @@ class Square extends formerSquare {
     if (c === undefined) {
       this.print();
     } else {
-      const squareSymbol = 'C'.repeat(this.width);
-
       for (let i = 0; i < this.height; i++) {
-        console.log(squareSymbol);
+        const squareSymbol = c;
+        console.log(squareSymbol.repeat(this.width));
       }
     }
   }
