@@ -4,13 +4,14 @@
     urllib package
 """
 
-import urllib.request
+from urllib import request
 
 url = 'https://alx-intranet.hbtn.io/status'
 
-with urllib.request.urlopen(url) as r:
+with request.urlopen(url) as r:
     data = r.read()
 
-print(f"Body response:\n\t - type: {type(data)}\n\t"
-      f" - content: {data}\n\t "
-      f"- utf8 content: {data.decode('utf-8')}")
+print(f"Body response:")
+print(f"\t - type: {type(data)}")
+print(f"\t - content: {data}")
+print(f"\t - utf8 content: {data.decode('utf-8')}")
