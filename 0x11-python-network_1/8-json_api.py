@@ -17,9 +17,10 @@ if __name__ == '__main__':
 
     try:
         json_response = response.json()
-        if len(json_response) == 0:
+        if not json_response:
             print("No result")
         else:
-            print("[{}] {}".format(json_response["id"], json_response["name"]))
+            print("[{}] {}".format(json_response.get["id"],
+                  json_response.get["name"]))
     except ValueError:
         print("Not a valid JSON")
