@@ -12,9 +12,7 @@ if __name__ == '__main__':
     else:
         q = ""
 
-    response = requests.post(
-                             "http://e73beee7b20a.b72d3394.alx-cod. \
-                             online:5000/search_user",
+    response = requests.post("0.0.0.0:5000/search_user",
                              data={"q": q})
 
     try:
