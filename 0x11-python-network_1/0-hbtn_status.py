@@ -6,11 +6,12 @@
 
 from urllib import request
 
-url = 'https://alx-intranet.hbtn.io/status'
+if __name__ == '__main__':
+    url = 'https://alx-intranet.hbtn.io/status'
 
-with request.urlopen(url) as r:
-    data = r.read()
+    with request.urlopen(url) as r:
+        data = r.read()
 
-print(f"Body response:\n\t - type: {type(data)}\n\t"
-      f" - content: {data}\n\t "
-      f"- utf8 content: {data.decode('utf-8')}")
+    print(f"Body response:\n\t - type: {type(data)}\n\t"
+          f" - content: {data}\n\t "
+          f"- utf8 content: {data.decode('utf-8')}")
