@@ -12,12 +12,10 @@ from urllib import request, error
 if __name__ == '__main__':
     url = sys.argv[1]
 
-    sent_request = request.Request(url)
-
     try:
-        with request.urlopen(sent_request) as resp:
+        with request.urlopen(url) as resp:
             resp_body = resp.read()('utf-8')
 
             print(resp_body)
     except error.HTTPError as e:
-        print("Error code: {}".format(e.code))
+        print(f"Error code: {e.code}")
