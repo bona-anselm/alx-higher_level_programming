@@ -11,6 +11,7 @@ if __name__ == '__main__':
     with request.urlopen(url) as r:
         data = r.read()
 
-    print("Body response:\n\t - type: {}\n\t - content: {}\n\t"
-          "- utf8 content: {}"
-          .format(type(data), data, data.decode('utf-8')))
+    print("Body response:")
+    print("\t- type: {}".format(type(data)))
+    print("\t- content: {}".format(data))
+    print("\t- utf8 content: {}".format(data.decode('utf-8')))
