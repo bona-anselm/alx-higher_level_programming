@@ -7,20 +7,19 @@ import requests
 import sys
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1:
-        q = sys.argv[1]
+    if len(sys.argv) == 1:
+        q = {'q': ""}
     else:
-        q = ""
+        q = {'q': sys.argv[1]}
 
     response = requests.post("0.0.0.0:5000/search_user",
-                             data={"q": q})
+                             data=q)
 
     try:
-        json_response = response.json()
-        if not json_response:
+        response = response.json()
+        if response == {}:
             print("No result")
         else:
-            print("[{}] {}".format(json_response.get["id"],
-                  json_response.get["name"]))
+            print(f'[{response.get["id"]}] {response.get["name"]}')
     except ValueError:
         print("Not a valid JSON")
